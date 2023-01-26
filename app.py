@@ -34,8 +34,8 @@ for arquivo in listOfFile:
     with open(f"{nameFileOpen}.txt", 'r') as arquivo:
         for linha in arquivo:
             frase = gtts.gTTS(linha, lang='pt-br')
-            frase.save(f"{nameFileOpen}.mp3")
-            # playsound(f"{nameFileOpen}.mp3")
+            frase.save(f"audio/{nameFileOpen}.mp3")
+           
 
 
 
